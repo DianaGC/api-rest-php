@@ -87,6 +87,11 @@ they perform testing in real browser.
 
 
 ### API
+To start the project run the following command
+
+```
+php yii serve
+```
 GET  http://localhost:8080/books
 POST http://localhost:8080/book/create-book
 {
