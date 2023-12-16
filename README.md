@@ -108,10 +108,17 @@ POST http://localhost:8080/book/create-book
     "description": "una pequena comedia en espanol para disfrutar en familia"
 }
 ```
-
-
+- get a book for the language
+```
 GET http://localhost:8080/book/get-book-by-language?language=espanol
+```
+- get a book by id
+```
 GET http://localhost:8080/book/get-book-by-id?id=123
+```
+- update a book
+```
+
 PUT http://localhost:8080/book/update-book?id=123
 {
     "title":"tests1",
@@ -121,8 +128,13 @@ PUT http://localhost:8080/book/update-book?id=123
     "language": "espanol",
     "description": "una pequena comedia en espanol para disfrutar en familia"
 }
+```
+- delete a book
+```
 PUT http://localhost:8080/book/delete-book?id=123
-
+```
 
 ### Improvements
-- 
+- Add Author collection 
+- Add unit test
+- Add aggregation to work with collections
