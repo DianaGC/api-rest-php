@@ -92,7 +92,12 @@ To start the project run the following command
 ```
 php yii serve
 ```
+- to list all books.
+```
 GET  http://localhost:8080/books
+```
+- To create a new book 
+```
 POST http://localhost:8080/book/create-book
 {
     "title":"tests1",
@@ -102,6 +107,8 @@ POST http://localhost:8080/book/create-book
     "language": "espanol",
     "description": "una pequena comedia en espanol para disfrutar en familia"
 }
+```
+
 
 GET http://localhost:8080/book/get-book-by-language?language=espanol
 GET http://localhost:8080/book/get-book-by-id?id=123
